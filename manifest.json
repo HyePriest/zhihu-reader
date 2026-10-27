@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "知乎回答读取器",
+  "version": "0.1.1",
+  "description": "从已打开的知乎页面提取回答，复制正文或导出 Markdown。",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.zhihu.com/*"],
+  "action": {"default_title": "打开知乎回答读取器"},
+  "background": {"service_worker": "background.js"}
+}

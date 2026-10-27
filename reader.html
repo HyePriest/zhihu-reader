@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>知乎回答读取器</title><link rel="stylesheet" href="reader.css"></head>
+<body><main>
+<header><span class="tag" id="version">本地工具</span><h1>知乎回答读取器</h1><p>输入问题或回答链接，把已加载的内容整理成便于阅读、复制的文字。</p></header>
+<form id="form"><label for="url">知乎网址</label><div class="input-row"><input id="url" type="url" required placeholder="https://www.zhihu.com/question/…/answer/…"><button id="read" type="submit">读取</button></div></form>
+<div class="toolbar"><button id="source" type="button">打开原页面</button><button id="more" type="button" disabled>再加载 3 屏并读取</button><button id="copy" type="button" disabled>复制正文</button><button id="export" type="button" disabled>导出 Markdown</button></div>
+<p id="status" role="status" aria-live="polite">支持问题页和单个回答页。首次打开时，可能需要在知乎页面登录或完成验证，再返回点击“读取”。</p>
+<section id="result" hidden><h2 id="title"></h2><p id="summary"></p><div id="answers"></div></section>
+<footer>结果只保留在当前阅读页内，关闭或刷新前请导出。仅在你操作时读取知乎页面，不会读取或导出 Cookie，不上传正文。问题页只代表已加载的回答；完整性需对照原文。</footer>
+</main><script src="shared.js"></script><script src="reader.js"></script></body></html>

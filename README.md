@@ -2,7 +2,7 @@
 
 一个轻量的 Chrome / Edge 扩展，将知乎页面中**已经加载的回答**整理成文字，支持复制和导出 Markdown。无需 API Key、Python 或后端服务。
 
-当前版本：**0.1.1**。真实知乎网页的兼容性尚待实测；自动化测试使用本地模拟页面，不能证明可以读取任意真实问题。详细边界见 [验证记录](验证记录.md)。
+当前版本：**0.1.1**。从 [Releases](https://github.com/HyePriest/zhihu-reader/releases) 下载安装包即可使用。
 
 ## 能做什么
 
@@ -71,7 +71,7 @@ npx playwright install chromium
 
 也可以通过 `BROWSER_CHANNEL` 指定 Playwright 支持的本机浏览器通道，例如 `chrome` 或 `msedge`。Linux CI 使用 `npx playwright install --with-deps chromium`。
 
-测试覆盖网址校验、指定回答匹配、动态展开、折叠提示、滚动合并、链接处理、Markdown 导出、阅读页渲染、复制与下载。阅读页交互测试模拟扩展 API；安装后的真实扩展调用和真实知乎页面仍需手动检查，见 [贡献指南](CONTRIBUTING.md)。
+测试覆盖网址校验、指定回答匹配、动态展开、折叠提示、滚动合并、链接处理、Markdown 导出、阅读页渲染、复制与下载。测试记录见 [验证记录](验证记录.md)，开发流程见 [贡献指南](CONTRIBUTING.md)。
 
 Windows 打包：
 
